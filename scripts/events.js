@@ -1,3 +1,4 @@
+var messageBoard = document.getElementById("chatBox");
 var userInput = document.getElementById("userInput");
 var clearButton = document.getElementById("clearButton");
 var darkTheme = document.getElementById("darkThemeCheckbox");
