@@ -2,7 +2,6 @@ var FetchMessage = (function () {
     var messageArray = [];
     return {
         loadMessages: function () {
-            console.log("something 2.");
             var myRequest = new XMLHttpRequest();
 
             myRequest.addEventListener("load", function() {
