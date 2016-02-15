@@ -1,31 +1,26 @@
- console.log("something.");
 var FetchMessage = (function () {
-    var messages = [];
-    var messageBoard = document.getElementById("chatBox");
-
-    return {  	
-        loadMessages: function (callback) {
+    var messageArray = [];
+    return {
+        loadMessages: function () {
             console.log("something 2.");
             var myRequest = new XMLHttpRequest();
 
             myRequest.addEventListener("load", function() {
                 var messageData = JSON.parse(this.responseText);
-                messages = messageData.messages;
-                console.log("messageData", messageData);
+                messageArray = messageData.messages;
+                
+                // messageArray.forEach(function(currentObject){
+                //     FetchMessage.newMessage("chatBox", currentObject.msg)
+                // })
+                
 
-                var contentChat = document.getElementById('chatBox').value
-                    console.log("contentChat");
-                var currentChat;
-
-                for (var i = 0; i < messages.length; i++) {
-                    currentChat = messageData.contentChat[i];
-                    console.log("currentchat", currentchat);
+                for (var i = 0; i < messageArray.length; i++) {
+                    var currentObject = messageArray[i];
+                    FetchMessage.newMessage("chatBox", currentObject.msg);
                 }
-            callback(messages);
-            messageBoard.innerHTML = messages;
-        });
+            });
 
-            myRequest.open("GET", "messages.json");
+            myRequest.open("GET", "scripts/messages.json");
             myRequest.send();
         }
     }
