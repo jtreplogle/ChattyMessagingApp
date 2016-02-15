@@ -2,6 +2,10 @@ div#chatBox {
     border: 2px solid black;
 }
 
+#checkboxes {
+    display: block;
+}
+
 .container {
     text-align: center;
     border: 2px solid black;

@@ -1,6 +1,7 @@
 console.log("something.");
 var FetchMessage = (function () {
     var messages = [];
+    var messageBoard = document.getElementById("chatBox");
 
     return {  	
         loadMessages: function (callback) {
@@ -20,7 +21,8 @@ var FetchMessage = (function () {
                     currentChat = messageData.contentChat[i];
                     console.log("currentchat", currentchat);
                 }
-            // callback(messages);
+            callback(messages);
+            messageBoard.innerHTML = messages;
         });
 
             myRequest.open("GET", "messages.json");
