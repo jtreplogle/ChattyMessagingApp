@@ -12,7 +12,7 @@ var FetchMessage = (function () {
                 messages = messageData.messages;
                 console.log("messageData", messageData);
 
-                var contentChat = document.getElementById('chatBox')
+                var contentChat = document.getElementById('chatBox').value
                     console.log("contentChat");
                 var currentChat;
 
