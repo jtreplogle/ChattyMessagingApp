@@ -11,3 +11,6 @@ div#chatBox {
     border: 2px solid black;
     border-radius: 6px;
     width: 85%;
+}
+
+/*Use "message" class to format created message divs*/
