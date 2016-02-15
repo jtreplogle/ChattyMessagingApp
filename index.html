@@ -2,11 +2,11 @@
 <html lang="en">
 
     <head>
-        <meta charset="UTF-8">
+        <meta charset="UTF-8"> 
         <title>Chatty</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="chatty.css">
-        <link id="darktheme" rel="stylesheet" type="text/css" href="chattydarktheme.css">
+        <link rel="stylesheet" type="text/css" href="styles/chatty.css">
+        <link id="darktheme" rel="stylesheet" type="text/css" href="styles/chattydarktheme.css">
     </head>
       
     <body>
@@ -19,11 +19,16 @@
                 <input id="userInput" type="text" class="form-control" placeholder="Enter a Message">
             </div>
             <button id="clearButton" class="btn btn-default">Clear that shiiiiii...</button>
-            <div id="checkboxes">
-                <input id="largeTextCheckbox" type="checkbox">Large Text</input>
-                <input id="darkThemeCheckbox" type="checkbox">Dark Theme</input>
-            </div>
+            <input id="largeTextCheckbox" type="checkbox">Large Text</input>
+            <input id="darkThemeCheckbox" type="checkbox">Dark Theme</input>
         </form>  
+
+        <div class="container">
+            <h2>Messages: </h2>
+            <h4>Board Topic: That's SO Ahmed!</h4>
+                <!-- Message Output Div -->
+                <div id="chatBox">Put some content.</div>
+        </div>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>

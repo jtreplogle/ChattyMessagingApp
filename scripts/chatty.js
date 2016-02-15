@@ -1,4 +1,4 @@
-console.log("something.");
+ console.log("something.");
 var FetchMessage = (function () {
     var messages = [];
     var messageBoard = document.getElementById("chatBox");
