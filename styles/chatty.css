@@ -1,5 +1,5 @@
-div#chatBox {
-    border: 2px solid black;
+#chatBox {
+    border-right: 2px solid black;
 }
 
 #checkboxes {
@@ -11,4 +11,8 @@ div#chatBox {
     border: 2px solid black;
     border-radius: 6px;
     width: 85%;
+}
+
+#clearButton {
+	margin-left: 20px;
 }
