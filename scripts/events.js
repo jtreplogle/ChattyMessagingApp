@@ -14,16 +14,7 @@ clearButton.addEventListener("click", function (){
 });
 
 // DARK THEME CHECKBOX EVENT LISTENER
-/*
-darkTheme.addEventListener("click", function() {
-    if (darkTheme.checked === true) {
-        darkTheme.href = "chattydarktheme.css";
-    } else {
-        darkTheme.href = "chatty.css";
-    }
-    console.log("darkTheme EL has fired.");
-});
-*/
+
 
 // LARGE TEXT CHECKBOX EVENT LISTENER
 largeText.addEventListener("click", function () {
@@ -44,10 +35,10 @@ messageBoard.addEventListener("click", function(e){
     }
 });
 
-/*
-deleteButtons.addEventListener("click", function(event) {
-   var currentDelButton = event.currenttarget;
-   outputString = "";
-   console.log("Delete Button was fired."); 
-});
-*/
+// INPUT FIELD EVENT LISTENER
+userInput.addEventListener("keypress", function (event) {
+        if (event.keyCode === 13) {
+            console.log(event);
+            postNewMessage();
+          }
+        });
