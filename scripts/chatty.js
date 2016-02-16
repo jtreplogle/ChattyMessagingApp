@@ -1,5 +1,6 @@
 var FetchMessage = (function () {
     var messageArray = [];
+    
     return {
         loadMessages: function () {
             var myRequest = new XMLHttpRequest();
