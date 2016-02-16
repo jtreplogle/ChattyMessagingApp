@@ -4,6 +4,7 @@ var clearButton = document.getElementById("clearButton");
 var darkTheme = document.getElementById("darkThemeCheckbox");
 var largeText = document.getElementById("largeTextCheckbox");
 
+// Clear Button Event Listener
 clearButton.addEventListener("click", function (){
     chatBox.innerHTML = "";
     clearButton.disabled = true;
