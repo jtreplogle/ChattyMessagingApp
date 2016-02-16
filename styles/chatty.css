@@ -1,5 +1,6 @@
 div#chatBox {
     border: 2px solid black;
+    padding: 10px;
 }
 
 #chatBox {
@@ -45,7 +46,6 @@ div#chatBox {
 #userInput {
 	width: 700px;
 	float: right;
-	text-area: ;
 	height: 150px;
 	text-align: top;
 }
@@ -58,6 +58,19 @@ img {
 	margin-top: 0px;
 }
 
+.container.darkTheme {
+	border-color: white;
+}
 
+.darkTheme {
+	background-color: #a9a9a9;
+	color: white;
+	border-color: white;
+
+}
+
+.container.enlargeText {
+	font-size: 200px;
+}
 
 
