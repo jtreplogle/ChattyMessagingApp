@@ -4,6 +4,7 @@ var clearButton = document.getElementById("clearButton");
 var darkTheme = document.getElementById("darkThemeCheckbox");
 var largeText = document.getElementById("largeTextCheckbox");
 var deleteButtons = document.getElementsByClassName("deleteButton");
+var paragraphs = document.getElementsByClassName("indMessages");
 console.log(deleteButtons);
 
 // CLEAR BUTTON EVENT LISTENER
@@ -17,7 +18,7 @@ clearButton.addEventListener("click", function (){
 darkTheme.addEventListener("click", function(){
     document.body.classList.toggle("darkTheme");
     console.log("darkTheme EL has fired.");
-})
+});
 
 // LARGE TEXT CHECKBOX EVENT LISTENER
 largeText.addEventListener("click", function () {
@@ -45,7 +46,7 @@ userInput.addEventListener("keypress", function (event) {
         FetchMessage.newMessage("chatBox", userInput.value);
             clearButton.disabled = false;
             userInput.value = "";
-            userInput.blur();
+            // userInput.blur();
             userInput.focus();
       }
 });

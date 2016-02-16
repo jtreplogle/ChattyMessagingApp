@@ -5,6 +5,7 @@ div#chatBox {
 
 #chatBox {
     border-right: 2px solid black;
+    margin-bottom: 3%;
 }
 
 #checkboxes {
@@ -15,7 +16,7 @@ div#chatBox {
 }
 
 .container {
-    text-align: center;	
+    /*text-align: center;	*/
     border: 2px solid black;
     border-radius: 6px;
     width: 80%;
@@ -23,7 +24,6 @@ div#chatBox {
     margin-top: 250px;
     margin-left: 10%;
     margin-right: 10%;
-
 }
 
 #clearButton {
@@ -50,12 +50,26 @@ div#chatBox {
 	text-align: top;
 }
 
-h1 {
+h1, h2, h4 {
 	text-align: center;
 }
 
 img {
 	margin-top: 0px;
+}
+
+.fancy {
+    font-family: cursive;
+    color: blue;
+}
+
+.deleteButton {
+    font-size: 14px;
+}
+
+.message p {
+    display: inline-block;
+    padding-right: .5em;
 }
 
 .container.darkTheme {
@@ -66,13 +80,12 @@ img {
 	background-color: #a9a9a9;
 	color: white;
 	border-color: white;
-
 }
 
 .enlargeText {
 	font-size: 1.5em;
 }
 
-.pageTitle {
+.staysBlack, #userInput, .deleteButton {
     color: black;
 }
