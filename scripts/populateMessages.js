@@ -4,12 +4,20 @@ var FetchMessage = (function (originalFetchMessage) {
     var messageContainer;
     var outputString = "";
     
-  originalFetchMessage.newMessage = function (elementId, textString) {
-    messageContainer = document.getElementById(elementId);
-    messages.push(textString);
-    outputString = `<div id="${messages.length - 1}" class="message"><p>${textString}</p><button class="deleteButton">Delete</button></div>`;
-    messageContainer.innerHTML += outputString;
+    originalFetchMessage.newMessage = function (elementId, textString) {
+        messageContainer = document.getElementById(elementId);
+        messages.push(textString);
+        outputString = `<div id="${messages.length - 1}" class="message"><p>${textString}</p><button class="deleteButton">Delete</button></div>`;
+        messageContainer.innerHTML += outputString;
+    }
 
-  }
+    originalFetchMessage.deleteIndex = function (messageId) {
+        delete messages[messageId]; 
+    }
+
+    originalFetchMessage.getMessage = function () {
+        return messages;
+    }
+
     return originalFetchMessage;
 })(FetchMessage);
