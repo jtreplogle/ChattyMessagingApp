@@ -1,10 +1,10 @@
 {
   "messages":
     [ { 
-      "msg1": "Message 1",
-      "msg2": "Message 2",
-      "msg3": "Message 3",
-      "msg4": "Message 4",
-      "msg5": "Message 5"
+      "msg1": "A bird in the hand is worth two in the bush.",
+      "msg2": "Do. Or do not.  There is no try.",
+      "msg3": "If you want to test a man's character, give him power.",
+      "msg4": "In the end we only regret the chances we didn't take.",
+      "msg5": "It rubs the lotion on its skin or else it gets the hose again."
     } ]
 }
