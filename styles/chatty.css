@@ -69,8 +69,10 @@ img {
 
 }
 
-.container.enlargeText {
-	font-size: 200px;
+.enlargeText {
+	font-size: 1.5em;
 }
 
-
+.pageTitle {
+    color: black;
+}

@@ -14,7 +14,10 @@ clearButton.addEventListener("click", function (){
 });
 
 // DARK THEME CHECKBOX EVENT LISTENER
-
+darkTheme.addEventListener("click", function(){
+    document.body.classList.toggle("darkTheme");
+    console.log("darkTheme EL has fired.");
+})
 
 // LARGE TEXT CHECKBOX EVENT LISTENER
 largeText.addEventListener("click", function () {
@@ -37,8 +40,13 @@ messageBoard.addEventListener("click", function(e){
 
 // INPUT FIELD EVENT LISTENER
 userInput.addEventListener("keypress", function (event) {
-        if (event.keyCode === 13) {
-            console.log(event);
-            postNewMessage();
-          }
-        });
+    if (event.keyCode === 13) {
+        console.log(event);
+        FetchMessage.newMessage("chatBox", userInput.value);
+            clearButton.disabled = false;
+            userInput.value = "";
+            userInput.blur();
+            userInput.focus();
+      }
+});
+

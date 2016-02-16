@@ -8,7 +8,7 @@ var FetchMessage = (function () {
             myRequest.addEventListener("load", function() {
                 var messageData = JSON.parse(this.responseText);
                 messageArray = messageData.messages;
-                
+                console.log(messageArray);
                 // messageArray.forEach(function(currentObject){
                 //     FetchMessage.newMessage("chatBox", currentObject.msg)
                 // })
@@ -20,7 +20,7 @@ var FetchMessage = (function () {
                 }
             });
 
-            myRequest.open("GET", "scripts/messages.json");
+            myRequest.open("GET", "messages.json");
             myRequest.send();
         }
     }
