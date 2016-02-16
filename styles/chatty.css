@@ -11,8 +11,7 @@ div#chatBox {
 #checkboxes {
     display: block;
     margin-left: 200px;
-    width: 300px;
-    
+    width: 300px; 
 }
 
 .container {
@@ -29,14 +28,12 @@ div#chatBox {
 #clearButton {
 	display: inline;
 	clear:all;
-
 }
 
 #formID {
 	float: left;
 	max-width: 120px;
 	max-height: 120px;
-
 }
 
 #Ahmed {
