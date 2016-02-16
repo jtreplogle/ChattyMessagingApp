@@ -13,7 +13,11 @@
     width: 85%;
 }
 
+
 #clearButton {
 	margin-left: 20px;
 }
+
+
+/*Use "message" class to format created message divs*/
 
