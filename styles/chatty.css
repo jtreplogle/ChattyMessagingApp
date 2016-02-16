@@ -2,6 +2,10 @@ div#chatBox {
     border: 2px solid black;
 }
 
+#chatBox {
+    border-right: 2px solid black;
+}
+
 #checkboxes {
     display: block;
 }
@@ -10,7 +14,34 @@ div#chatBox {
     text-align: center;
     border: 2px solid black;
     border-radius: 6px;
-    width: 85%;
+    width: 80%;
+    float: right;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
-/*Use "message" class to format created message divs*/
+#clearButton {
+	display: inline;
+
+	clear:all;
+
+}
+
+#formID {
+	float: left;
+	max-width: 120px;
+	max-height: 120px;
+
+}
+
+#Ahmed {
+	max-height: 120px;
+}
+
+/*#userInput {
+	float: right;
+	clear: all;
+	display: 	block;
+}
+*/
+
