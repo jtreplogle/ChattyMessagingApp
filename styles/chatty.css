@@ -1,5 +1,6 @@
 div#chatBox {
     border: 2px solid black;
+    padding: 10px;
 }
 
 #chatBox {
@@ -8,21 +9,25 @@ div#chatBox {
 
 #checkboxes {
     display: block;
+    margin-left: 200px;
+    width: 300px;
+    
 }
 
 .container {
-    text-align: center;
+    text-align: center;	
     border: 2px solid black;
     border-radius: 6px;
     width: 80%;
     float: right;
+    margin-top: 250px;
     margin-left: 10%;
     margin-right: 10%;
+
 }
 
 #clearButton {
 	display: inline;
-
 	clear:all;
 
 }
@@ -38,10 +43,34 @@ div#chatBox {
 	max-height: 120px;
 }
 
-/*#userInput {
+#userInput {
+	width: 700px;
 	float: right;
-	clear: all;
-	display: 	block;
+	height: 150px;
+	text-align: top;
 }
-*/
+
+h1 {
+	text-align: center;
+}
+
+img {
+	margin-top: 0px;
+}
+
+.container.darkTheme {
+	border-color: white;
+}
+
+.darkTheme {
+	background-color: #a9a9a9;
+	color: white;
+	border-color: white;
+
+}
+
+.container.enlargeText {
+	font-size: 200px;
+}
+
 
