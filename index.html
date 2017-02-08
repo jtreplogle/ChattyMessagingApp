@@ -10,25 +10,24 @@
     <body>
         <nav class="navbar navbar-default navbar-fixed-top">
             <div class="navbar-form"  role="Message">
-                <!-- BRAND IMAGE -->
-                <h1 class="staysBlack">Chatty: <span class="fancy">Ahmedful</span> Edition</h1>
-                <img alt="Brand" src="https://scontent-ord1-1.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/1969294_363301283842266_6063292474933360872_n.jpg?oh=7193ec555797745c9316bec3f24f0abf&oe=57662F44" width="150" height="150">
+                <h1 class="staysBlack">Chatty ~ Messaging App</h1>
                 <div class="form-group">
                 <!-- MESSAGE INPUT FIELD -->
-                <input type="text" id="userInput" type="text" autofocus="autofocus" placeholder="Enter a Message">  
+                <input type="text" id="userInput" type="text" autofocus="autofocus" placeholder="Message Input">  
             </div>
-            <button id="clearButton" class="btn btn-default">Clear Messages</button>
+            <div id="clearButtonDiv">
+            <button id="clearButton" class="btn btn-default">Clear All Messages</button>
                 <div id ="checkboxes">
-                    <input id="largeTextCheckbox" type="checkbox"><span class="staysBlack">Large Text</span></input>
-                    <input id="darkThemeCheckbox" type="checkbox"><span class="staysBlack">Dark Theme</span></input>
+                    <input id="largeTextCheckbox" type="checkbox"><span class="staysBlack">  Large Text  </span></input>
+                    <input id="darkThemeCheckbox" type="checkbox"><span class="staysBlack">  Dark Theme  </span></input>
                 </div> 
+                </div>
             </div>
         </nav>
         
         <!-- CONTENT CONTAINER -->
         <div class="container">
-            <h2>Messages: </h2>
-            <h4>Board Topic: That's <strong>SO</strong> <span class="fancy">Ahmed!</span></h4>
+            <h2>Displayed Messages: </h2>
                 <!-- MESSAGE OUTPUT DIV -->
             <div id="chatBox">
         </div>

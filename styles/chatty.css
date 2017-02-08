@@ -9,9 +9,13 @@ div#chatBox {
 }
 
 #checkboxes {
-    display: block;
-    margin-left: 200px;
-    width: 300px; 
+    margin-top: 5px;
+    text-align: center; 
+}
+
+.navbar-form {
+    text-align: center;
+    background: LightSteelBlue;
 }
 
 .container {
@@ -20,14 +24,21 @@ div#chatBox {
     border-radius: 6px;
     width: 80%;
     float: right;
-    margin-top: 250px;
+    margin-top: 325px;
     margin-left: 10%;
     margin-right: 10%;
+    /*background-image: url("https://static.pexels.com/photos/34578/pexels-photo.jpg");*/
+}
+
+body {
+    background-image: url("https://static.pexels.com/photos/34578/pexels-photo.jpg");
 }
 
 #clearButton {
-	display: inline;
-	clear:all;
+	/*display: inline;*/
+	clear: all;
+    text-align: center;
+    margin-top: 10px;
 }
 
 #formID {
@@ -36,15 +47,18 @@ div#chatBox {
 	max-height: 120px;
 }
 
-#Ahmed {
+/*#Ahmed {
 	max-height: 120px;
-}
+}*/
 
 #userInput {
 	width: 700px;
 	float: right;
 	height: 150px;
 	text-align: top;
+    /*display: block;*/
+    padding-left: 130px;
+
 }
 
 h1, h2, h4 {
